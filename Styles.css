@@ -1,0 +1,601 @@
+/*------------------Page d'accueil----------------*/
+
+.fond_accueil {
+    background-image: url(./Images/fond_accueil.png) ;
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    margin: 0;
+    
+}
+
+nav ul {
+	margin: 0;
+	text-align: center;
+	padding: 20px;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+	margin: 0 20px;
+}
+
+nav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+    font-family: "poppins";
+	font-weight: bold;
+    font-size: x-large;
+    text-shadow: 0px 1px 2px;
+    text-transform: capitalize;
+    
+}
+
+.active {
+    text-decoration: underline 0.5vh;
+    text-underline-offset: 2vh;
+    
+}
+
+.clair a:hover {
+    color: #BFE3D2;
+}
+
+
+
+
+.taille_page{
+    
+    display: flex ;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    
+
+}
+
+.bouton_accueil {
+    
+    width: 25%;
+    background-color: #55896A;
+    color: white ;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "poppins";
+    font-size: x-large;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50px;
+    position:  absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+
+button:hover {
+    background-color: #BFE3D2;
+    color: #55896A;
+    transition: all 1000ms ease-in-out;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+
+.lien_container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+    align-items: center;
+}
+
+.titre_footer{
+    color: #7facb2;
+    font-family: "Kaoly";
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.icone_container{
+    display: flex;
+   
+}
+
+.image_footer_accueil{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -500px;
+
+}
+
+.info_container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 50px ;
+}
+
+
+.lien_footer{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+
+p.text_footer{
+    font-family: "poppins";
+    font-size: medium;
+    margin-bottom: 16;
+}
+
+
+
+
+/*------------Page évènements-----------------*/
+
+.fond_event{
+    background-image: url(./Images/fond_ecran_cadeau.png) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #55896A;
+}
+
+.main_event{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+}
+
+.gallery{
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+.gallery-container{
+    display:flex;
+    align-items: center;
+    height: 800px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    bottom: 50%;
+    z-index: 0;
+}
+
+.gallery-item{
+    height: 400px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    z-index: 0;
+    border-radius: 20px;
+    background-size: contain;
+}
+
+.gallery-item-1{
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4{
+    height: 500px;
+    opacity: 0.7;
+    width: 300px;
+    z-index: 1;
+}
+
+.gallery-item-2{
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3{
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 600px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    z-index: 2;
+}
+
+.gallery-item-4{
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-5{
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+
+.gallery-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 20px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    width: 80%;
+    left: 9%;
+}
+
+.gallery-controls button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    color: transparent;
+    
+}
+
+.gallery-controls-button:focus{
+    outline: none;
+}
+
+.gallery-controls-previous{
+    position: relative;
+}
+
+.gallery-controls-previous::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: -23%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+    
+}
+
+.gallery-controls-previous:hover::before{
+    left: -40px;
+}
+
+.gallery-controls-next{
+    position: relative;
+}
+
+.gallery-controls-next::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    right: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+}
+
+.gallery-controls-next:hover::before{
+    right: -40px;
+}
+
+.gallery-nav{
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.gallery-nav li{
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected{
+    background: #555;
+}
+
+.event{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 100px;
+    padding-top: 130px;
+
+}
+
+.lien_container_event{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 60px;
+    align-items: center;
+}
+
+.titre_footer_event{
+    color: #7facb2;
+    font-family: "Kaoly";
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.icone_container_event{
+    display: flex;
+   
+}
+
+
+.info_container_event{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 25px ;
+    font-size: 25px;
+}
+
+
+.lien_footer_event{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+
+p.text_footer_event{
+    font-family: "poppins";
+    font-size: 20px;
+    margin-bottom: 16;
+}
+
+
+.image_footer_event{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -500px;
+
+}
+
+
+
+
+/*-----------------Page Qui sommes-nous---------------*/
+
+.fond_QSN{
+    background-image: url(./Images/fond_ecran_cadeau.png) ;
+    background-size: cover;
+    
+    margin: 0;
+}
+
+nav a:hover {
+    color: #55896A;
+}
+
+
+@font-face {
+    font-family: "kaoly";
+    src: url("./Kaoly\ Demo-Regular.ttf") format(truetype);
+}
+
+.text{
+    margin-left: 3%;
+    
+    top: 40%;
+}
+
+h2{
+    font-family: "Kaoly";
+    color: #55896A;
+    font-size: 40px;
+    margin-bottom: 70px;
+    margin-top: 80px;
+
+}
+
+h2.titre_marge{
+    margin-top: 15%;
+}
+
+.groupe_equipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 40px;
+    
+}
+
+.container_text{
+    position: relative;
+    
+}
+
+.text_QSN{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.description{
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    margin: 5%;
+    font-family: "poppins","regular";
+    font-size: 20px;
+}
+
+.img_normal{
+    width: 300px;
+    height: 900px;
+    filter: drop-shadow(5px 5px 10px black);
+    z-index: 1;
+    
+}
+
+.img_long{
+    width: 300px;
+    height: 930px;
+    filter: drop-shadow(5px 5px 10px black);
+    z-index: 1;
+}
+
+
+.image_footer_QSN{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -2010px;
+
+}
+
+
+
+
+
+
+
+
+/*--------------------Page Se Connecter--------------------*/
+
+
+.fond_se_connecter{
+    background-image: url(./Images/fond_ecran_cadeau.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #55896A;
+}
+
+
+.main_form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:flex-start ;
+    position: relative;
+    top: 50px;
+    
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "poppins", "bold";
+    
+}
+
+.fond_form{
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    margin-right: 70px;
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+
+
+form label {
+    margin: 10px;
+    display: flex;
+    justify-content: baseline;
+    font-family: "poppins", "regular";
+}
+
+form input{
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    border-color: lightgray;
+    margin: 10px;
+    padding: 5px 0;
+    align-items: center;
+    width: 230px;
+}
+
+.position{
+    margin-left: 20px;
+}
+
+.bouton_form{
+    
+    
+    width: 200px;
+    background-color: #BFE3D2;
+    color: #55896A;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 15px 0 ;
+    
+}
+
+button:hover {
+    background-color: #55896A;
+    color: #BFE3D2;
+    transition: all 1000ms ease-in-out;
+}
+
+
+
+.image_footer_Connect{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -600px;
+
+}
+
+
+

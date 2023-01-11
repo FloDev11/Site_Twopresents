@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vvt2cii.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Formulaire</title>
+</head>
+<body class="fond_se_connecter">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./Page_Accueil.html">Accueil</a></li>
+                <li><a href="./Page_Evenement.html">Évenements</a></li>
+                <li><a href="./Page_Qui_somme_nous.html">Qui somme nous</a></li>
+                <li><a href="./Page_Formulaire.html" class="active">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main_form">
+        <div class="fond_form">
+            <h3>SE CONNECTER</h3>
+            <form action="https://twopresents.mds/se_connecter.php" method="POST">
+                <label for="nom_ou_email">Nom ou email</label>
+                <input type="text" type="email" name="nom_email" id="nom_ou_email">
+
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" name="password" id="mot_de_passe">
+
+                <div class="position">
+                    <button class="bouton_form">Valider</button>
+                </div>
+                
+            </form>
+        </div>
+        
+        <div class="fond_form">
+            <h3>S'INSCRIRE</h3>
+            <form action="https://twopresents.mds/s_inscrire.php" method="POST">
+                
+                
+                <label for="champ_prenom">Prénom</label>
+                <input type="text" name="prenom" id="champ_prenom">
+                
+                <label for="champ_nom">Nom</label>
+                <input type="text" name="nom" id="champ_nom">
+                
+                <label for="champ_sexe">Sexe</label>
+                <input type="text" name="sexe" id="champ_sexe">
+
+                <label for="champ_date">Date de naissance</label>
+                <input type="date" name="dateNaissance" id="champ_date">
+
+                <label for="champ_ville">Ville</label>
+                <input type="text" name="ville" id="champ_ville">
+
+                <label for="champ_email">Email</label>
+                <input type="email" name="nom_email" id="champ_email">
+
+                <label for="champ_password">Mot de passe</label>
+                <input type="password" name="password" id="champ_password">
+
+                <label for="champ_telephone">Téléphone</label>
+                <input type="tel" name="telephone" id="champ_telephone">
+
+                <div class="position">
+                    <button class="bouton_form">Valider</button>
+                </div>
+            </form>
+        </div>
+      
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="lien_container">
+            <h3 class="titre_footer">TwoPresents</h3>
+            <div class="icone_container">
+                <a href="https://www.facebook.com/profile.php?id=100088669902555" class="lien_footer">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/twopresents_" class="lien_footer" title="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+            
+             
+        </div>
+        
+        <div class="info_container">
+            <i class="fa fa-phone" aria-hidden="true"><p class="text_footer">+ 33 02 41 00 36 30</p></i>
+
+            <i class="fa fa-envelope" aria-hidden="true"><p class="text_footer">twopresents@gmail.com</p></i>
+
+            <i class="fa fa-map-marker" aria-hidden="true"><p class="text_footer">15 rue des lutins, 49400 , Secret Santa</p></i>
+        </div>
+        <img src="./Images/footer_rose.png" alt="" class="image_footer_Connect">
+    </footer>
+</body>
+</html>
